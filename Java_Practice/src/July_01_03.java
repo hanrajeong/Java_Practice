@@ -11,6 +11,9 @@ import java.util.HashSet;
 
 public class July_01_03 {
 	public int solution(int[] nums) {
+		if(nums == null) {
+			return 0;
+		}
         int answer = 0;
         int numPocketmon = nums.length / 2;
         HashSet<Integer> setNums = new HashSet<Integer>();
