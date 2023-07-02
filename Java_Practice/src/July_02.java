@@ -74,7 +74,7 @@ class July_02 {
         sortedGenres.sort((g1, g2) -> totalPlayTime.get(g2) - totalPlayTime.get(g1));
         return sortedGenres;
     }
-
+    // Song 정보 (인덱스, 재생시간)을 저장하기 위한 클래스
     class Song {
         int id;
         int playTime;
