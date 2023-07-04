@@ -14,3 +14,5 @@
 - 변수가 null인지 확인해야함
 - 리터럴과 비교하는 함수를 쓸때는 리터럴을 왼쪽에 써야함 (NullPointException 방지를 위해서)
 - if문 이후에 코드가 1줄만 있어도 코드블럭을 만드는게 good
+- DB문에 들어가는 상황을 고려해서라도 파라미터에 대한 제약 조건을 확인하는 것이 좋음.
+- String.equalsIgnoreCase() 를 사용하면 upper/lower case에 대한 구분 여부를 무시할 수 있음. 특히, Y/y, N/n 상황에서 좋음.

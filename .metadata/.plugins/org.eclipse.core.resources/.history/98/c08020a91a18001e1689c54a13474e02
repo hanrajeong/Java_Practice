@@ -1,0 +1,32 @@
+import java.util.HashMap;
+
+/*
+ *  프로그래머스 문제 풀이
+ *  https://school.programmers.co.kr/learn/courses/30/lessons/42579
+ *  입력 : 노래의 장르를 나타내는 문자열 배열 genres와 노래별 재생 횟수를 나타내는 정수 배열 plays
+ *  출력 : 베스트 앨범에 들어갈 노래의 고유 번호를 순서대로 return
+ */
+
+public class July_01_05 {
+	public int solution(String[][] clothes) {
+        int answer = 1;
+        
+        HashMap<String, Integer> clothes_dict = new HashMap<>();
+        
+        for(int i = 0; i < clothes.length; i++) {
+        	if(clothes_dict.containsKey(clothes[i][1])) {
+//        		clothes_dict.get(clothes[i][1]) += 1;
+//        		이렇게는 안넣어지고, 이처럼 새롭게 같은 key값으로 push해야 value를 덮어씌우며 업데이트할 수 있음.
+        		clothes_dict.put(clothes[i][1], clothes_dict.get(clothes[i][1]) + 1);
+        	}
+        	else {
+        		clothes_dict.put(clothes[i][1], 1);
+        	}
+        }
+        
+        for(String key : clothes_dict.keySet()) {
+        	answer *= (clothes_dict.get(key) + 1);
+        }
+        return answer-1;
+    }
+}

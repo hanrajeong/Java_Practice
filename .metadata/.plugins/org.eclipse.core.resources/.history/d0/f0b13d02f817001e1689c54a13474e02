@@ -1,0 +1,12 @@
+/*
+ *  프로그래머스 문제 풀이
+ *  https://school.programmers.co.kr/learn/courses/30/lessons/1845
+ *  입력 : 문자열 배열 babbling
+ *  출력 : 발음할 수 있는 단어의 개수를 return
+ *  기능 : 주어진 문자열 배열인 babbling 중 "aya", "ye", "woo", "ma" 
+ *  네 가지 발음을 최대 한 번씩 사용해 조합가능한 단어의 개수를 반환하는 함
+ */
+
+public class July_01_03 {
+	
+}

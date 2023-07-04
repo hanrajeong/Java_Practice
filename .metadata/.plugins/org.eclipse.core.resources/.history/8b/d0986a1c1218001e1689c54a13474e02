@@ -1,0 +1,34 @@
+import java.util.Map;
+import java.util.HashMap;
+
+/*
+ *  프로그래머스 문제 풀이
+ *  https://school.programmers.co.kr/learn/courses/30/lessons/42577
+ *  입력 : 전화번호부에 적힌 전화번호를 담은 배열 phone_book 
+ *  출력 : 어떤 번호가 다른 번호의 접두어인 경우가 있으면 false를 그렇지 않으면 true를 return
+ */
+
+public class July_01_04 {
+	public boolean solution(String[] phone_book) {
+        boolean answer = true;
+        // check null
+        if(phone_book == null) {
+        	return answer;
+        }
+        
+        Map<Integer, String[]> phone_map = new HashMap<>();
+        
+        for(String phone_number : phone_book) {
+        	int start_num = Integer.parseInt(phone_number.substring(0, 1));
+        	
+        	if(phone_map.containsKey(start_num)) {
+        		phone_map.get(start_num).add(phone_number);
+        	}
+        	else {
+        		String[] numbers = new String[] { phone_number };
+                phone_map.put(start_num, numbers);
+        	}
+        	phone_map.put(Integer.parseInt(phone_number.substring(0, 1)), phone_book)
+        }
+    }
+}

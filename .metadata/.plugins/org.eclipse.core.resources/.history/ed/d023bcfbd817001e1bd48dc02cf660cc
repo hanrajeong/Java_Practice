@@ -1,0 +1,11 @@
+/*
+ *  프로그래머스 문제 풀이
+ *  https://school.programmers.co.kr/learn/courses/30/lessons/120924
+ *  입력 : 등차수열 or 등비수열 common
+ *  출력 : 마지막 원소 다음으로 올 숫자
+ *  기능 : 등차수열 혹은 등비수열의 다음 항 값을 계산하는 함
+ */
+
+public class July_01_01 {
+	
+}

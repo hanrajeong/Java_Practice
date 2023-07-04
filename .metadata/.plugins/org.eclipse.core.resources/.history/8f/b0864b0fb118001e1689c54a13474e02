@@ -1,0 +1,22 @@
+import java.util.*;
+/*
+ *  프로그래머스 문제 풀이
+ *  https://school.programmers.co.kr/learn/courses/30/lessons/42579
+ *  입력 : 노래의 장르를 나타내는 문자열 배열 genres와 노래별 재생 횟수를 나타내는 정수 배열 plays
+ *  출력 : 베스트 앨범에 들어갈 노래의 고유 번호를 순서대로 return
+ */
+
+public class July_02_02 {
+	public int[] solution(int []arr) {
+		ArrayList<Integer> answer = new ArrayList<Integer>();
+		int prev = arr[0];
+		answer.add(prev);
+		for(int i = 0; i < arr.length; i++) {
+			if(arr[i] != prev) {
+				answer.add(arr[i]);
+				prev = arr[i];
+			}
+		}
+		return answer.stream().mapToInt(i->i).toArray();
+    }
+}
