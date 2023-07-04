@@ -24,6 +24,7 @@ public class July_01_02_revised {
 //			예시 : [ana, mislav, mislav, stanko] , [ana, mislav, stanko]
 //			completion은 null이 아닌게 보장되는 상황.
 			// Comment : 대소문자를 구분하는 것인지가 주어지지 않았으니, 케이스를 무시하는 String.equalsIgnoreCase() 메소드를 사용하는 것이 좋음.
+			// String.equals() method는 정확하게 일치하는지를 비교 
 			if(!completion[i].equalsIgnoreCase(participant[i])) {
 				break;
 			}
