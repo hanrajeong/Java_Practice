@@ -8,7 +8,7 @@ import java.util.Arrays;
  *  기능 : 마라톤 선수들 중 완주하지 못한 선수를 찾는 함
  */
 
-public class July_01_02 {
+public class July_01_02_revised {
 	public String solution(String[] participant, String[] completion) {
 		if((completion == null) || (participant == null)) {
 			return "";
@@ -23,7 +23,8 @@ public class July_01_02 {
 //			만약 다르면, 해당 선수가 도착 못한 것.
 //			예시 : [ana, mislav, mislav, stanko] , [ana, mislav, stanko]
 //			completion은 null이 아닌게 보장되는 상황.
-			if(!completion[i].equals(participant[i])) {
+			// Comment : 대소문자를 구분하는 것인지가 주어지지 않았으니, 케이스를 무시하는 String.equalsIgnoreCase() 메소드를 사용하는 것이 좋음.
+			if(!completion[i].equalsIgnoreCase(participant[i])) {
 				break;
 			}
 		}

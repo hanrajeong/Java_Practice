@@ -9,6 +9,10 @@ import java.util.*;
 public class July_02_02 {
 	// 연속적으로 나타나는 숫자는 제거후 반환하는 main 메소드  
 	public int[] solution(int []arr) {
+		if(arr == null) {
+			int[] answer = {};
+			return answer;
+		}
 		ArrayList<Integer> answer = new ArrayList<Integer>();
 		int prev = arr[0];
 		answer.add(prev);

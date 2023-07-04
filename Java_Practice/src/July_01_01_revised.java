@@ -6,12 +6,25 @@
  *  기능 : 등차수열 혹은 등비수열의 다음 항 값을 계산하는 함
  */
 
-public class July_01_01 {
+public class July_01_01_revised {
 	// 등차수열인지 등비수열인지 확인해주는 helper 메소드 
 	public int checkArray(int[] common) {
 		// 기존 main함수에서 null이 아닌 값만 통과시켰기 때문에 null인지 확인 안
 		if(common == null) {
 			return -1;
+		}
+		// 인풋 파라미터가 제한 값을 만족했는지 검증 필요
+		// 특히, DB의 제약 조건을 만족했는지 여부 체크를 위해 필요함  
+		else if(common.length < 2) {
+			return -1;
+		}
+		else if(common.length > 1000) {
+			return -1;
+		}
+		for ( int item : common ) { 
+			if ( item <= -1000 || item >= 2000 ) { 
+				return -2;
+			}
 		}
 		int first = common[0];
 		int second = common[1];

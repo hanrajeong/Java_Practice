@@ -6,7 +6,7 @@ import java.util.*;
  *  출력 : 베스트 앨범에 들어갈 노래의 고유 번호를 순서대로 return
  */
 
-class July_02 {
+class July_02_01 {
     public int[] solution(String[] genres, int[] plays) {
         // 장르별 총 재생 시간을 저장하는 HashMap
         HashMap<String, Integer> totalPlayTime = new HashMap<>();
