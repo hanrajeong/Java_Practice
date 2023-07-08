@@ -1,0 +1,19 @@
+package Scheduler_prac;
+
+// Scheduler interface를 상속받
+public class RoundRobin implements Scheduler {
+    // Other class members and methods
+
+    @Override
+    public void sendCallToAgent() {
+        // Implementation of the sendCallToAgent() method
+    	System.out.println("Get the next phone call in a row.");
+    }
+}
+
+public class RoundRobin implements Scheduler {
+	@Override
+	public void getNextCall() {
+		System.out.println("Get the next phone call in a row.");
+	}
+}
