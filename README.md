@@ -2,6 +2,7 @@
 
 ## Current Activity
 - Java Language 공부를 위해 프로그래머스, 백준 알고리즘 문제 풀이 및 자바 프로그래밍 입문 (박은종 지음, 이지스퍼블리싱) Study 기록
+- CS_Study 폴더 내 마크다운 파일에 CS 관련 공부 내용 기록
 
 ## Activity Planner
 - 06월 29일 : June_29.java
