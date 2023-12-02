@@ -17,3 +17,6 @@
 - if문 이후에 코드가 1줄만 있어도 코드블럭을 만드는게 good
 - DB문에 들어가는 상황을 고려해서라도 파라미터에 대한 제약 조건을 확인하는 것이 좋음.
 - String.equalsIgnoreCase() 를 사용하면 upper/lower case에 대한 구분 여부를 무시할 수 있음. 특히, Y/y, N/n 상황에서 좋음.
+
+## 책으로 공부한 내용은 2023.12.02 부터 노션 페이지에 기록하기 시작함.
+https://www.notion.so/Study-Note-479f8603d3784c5fb81e986a2b7f7a14?p=e39635ae7099490c9fbf4b68237d3792&pm=s
